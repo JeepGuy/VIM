@@ -1,0 +1,47 @@
+Basic Navigation Commands: in command (command line) mode.
+
+    h moves the cursor one character to the left.
+    j moves the cursor down one line.
+    k moves the cursor up one line.
+    l moves the cursor one character to the right.
+    0 moves the cursor to the beginning of the line.
+    $ moves the cursor to the end of the line.
+    w move forward one word.
+    b move backward one word.
+    G move to the end of the file. 3 G will take you to the third line in the file. 
+    gg move to the beginning of the file. 3 gg will take you to the third line in the file as well.
+    `. move to the last edit.
+
+
+Expanded Definitions for above.
+-------------------------------
+
+To move down a line:  press "j"
+
+To move up a line:  press "k"
+
+To move to the right:  press "l"
+  
+To move to the left:   press "h"  
+
+To repeat a move, press and hold down the key.
+
+To move forward in the file, use Ctrl-f. 
+
+
+To jump to a specific line in a file: type colon and the line number
+
+For info on the file typer Cntrl G
+
+To list the line number and column on a file you set the ruler:
+-----------------------
+
+:set ruler
+
+:set no ruler to turn of the option
+can append an exclaimation mark to an option to make it toggle - able
+
+You can use some regular expressions
+
+^ = beginning of line or selection
+$ = end of line or selection
