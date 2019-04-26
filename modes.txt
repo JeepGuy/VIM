@@ -1,0 +1,6 @@
+Modes: operating modes in VIM
+
+Command mode: vim starts in command mode.			
+
+
+Line mode:   Type colon to get into line mode.
