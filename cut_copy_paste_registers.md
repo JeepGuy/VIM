@@ -23,19 +23,19 @@
 
 ### To view register contents:
 
-
-Type      :reg
+```
+:reg
 
 #### STDOUT
 --- Registers ---
-""   TODO^J    * NOTE: the unnamed register
-
-"0   TODO^J    * NOTE: also contains the yanked text as well because register 0 always contains the text from the most recent yank operation.
-
-"1   ^J        * NOTE: ^J  represents a newline character
-
+""   TODO^J    
+            * NOTE: the unnamed register
+"0   TODO^J 
+           * NOTE: also contains the yanked text as well because register 0 always contains the text from the most recent yank operation.
+"1   ^J    
+           * NOTE: ^J  represents a newline character
 "2   ^J
-
+```
 
 #### After a delete command register 1 contains the most recent deleted text.
 
