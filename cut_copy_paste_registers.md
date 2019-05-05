@@ -23,6 +23,22 @@
 
 ### To view register contents:
 
+:reg
+
+To look at a specific register:
+
+:reg w   - will show the contents of named register w.
+
+```
+:reg w
+--- Registers ---
+"w   This
+```
+
+To look at multiple registers type:
+
+:regw1   - will show registers w and 1(one).
+
 ```
 :reg
 
@@ -217,6 +233,30 @@ If you were to have used lowercase a then the text would have been replaced.
 "/   \<Create\>
 
 ```
+
+### Repeating with Registers
+
+[count][register]operator
+
+or
+
+[register][count]operator
+
+
+To paste two copies of a register:
+
+2"wP   - will print two (2) copies of what is in the w register
+Or: 
+"w2p   - does the exact same thing as above.
+
+
+
+
+
+
+
+
+
 
 
 
