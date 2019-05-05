@@ -39,6 +39,7 @@ Type      :reg
 
 #### After a delete command register 1 contains the most recent deleted text.
 
+```
 :reg
 
 --- Registers ---
@@ -52,7 +53,7 @@ Type      :reg
 "2   ^J
 
 "3   ^J
-
+```
 
 #### PUT the most recent YANKED text you must proceed the put command with the number of the register
 -------------------------------
