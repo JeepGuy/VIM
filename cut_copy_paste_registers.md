@@ -17,7 +17,8 @@
 
     - "0 holds the last yanked text (y)
     - "1 holds the delete (d) or changed (c) text
-    * Note: with each succesive delete or change Vim shifts the text from register 1 into register 2 until 9 and then falls out of the register.
+    * Note: with each succesive delete or change Vim shifts the text from register 1 into register 2 until 9 
+      and then the text falls out of the register.
 
 
 ### To view register contents:
@@ -39,15 +40,21 @@ Type      :reg
 #### After a delete command register 1 contains the most recent deleted text.
 
 :reg
+
 --- Registers ---
+
 ""   This line needs to be fixed at some point in the future.^J    * NOTE:  unnamed register
+
 "0   TODO^J                                                        * NOTE:  still contains the most recent YANKED text
+
 "1   This line needs to be fixed at some point in the future.^J    * NOTE: register 1 contains the most recent deleted text.
+
 "2   ^J
+
 "3   ^J
 
 
-PUT the most recent YANKED text you must proceed the put command with the number of the register
+#### PUT the most recent YANKED text you must proceed the put command with the number of the register
 -------------------------------
 
 "0P  - will put the text from register 0 (TODO) into the line iwth the cursor.
@@ -58,7 +65,7 @@ PUT the most recent YANKED text you must proceed the put command with the number
 The Black Hole Register   = /dev/null
 -----------------------
 
-"_     = when writing to the Black Hole register nothing happens.
+"_     = (quote underscore)  when writing to the Black Hole register nothing happens.
          * NOTE: Used to delete text without affecting the normal registers.
 
 
