@@ -15,9 +15,9 @@
 
 ## Numbered registers = "0, "1 ... "9  
 
-             - "0 holds the last yanked text (y)
-             - "1 holds the delete (d) or changed (c) text
-             * Note: with each succesive delete or change Vim shifts the text from register 1 into register 2 until 9 and then falls out of the register.
+    - "0 holds the last yanked text (y)
+    - "1 holds the delete (d) or changed (c) text
+    * Note: with each succesive delete or change Vim shifts the text from register 1 into register 2 until 9 and then falls out of the register.
 
 
 ### To view register contents:
