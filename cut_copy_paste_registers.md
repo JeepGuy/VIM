@@ -1,5 +1,5 @@
 # Register Types
---------------
+
 - Unnamed
 - Numbered
 - Named
@@ -69,6 +69,36 @@ oP  - (zero P) will put the text from register 0 (TODO) into the line iwth the c
 ## Named Registers
 
  - There are 26 named registers, from a - z
+ - You can specify a register when yanking or deleting, just as you can when you are putting (pasting)
+
+"ayy  - will yank the line into register a
+
+You can see the line yanked in register a below:
+
+```
+:reg
+--- Registers ---
+""   Put this line in the a register.^J
+"0   This line needs to be fixed at some point in the future.^JYou're work is not quite finished...^JThis line needs to be fixed at some point in the future.^J
+"1   This line needs to be fixed at some point in the future.^J
+"2   ^J
+"3   ^J
+"4   ^J
+"5   :help :help<ENTER>^J
+"6   You can even get help with :help.^J
+"7   You can also get help on a given subject:^J
+"8   You can specify a command to get help with, too.^J
+"9   ^J
+"a   Put this line in the a register.^J
+"w   wwwwbbbbwwwwwbbbbbbbbWWWWWWWBBBBBBBggG1gg3G:44^M:$^M:44^M^G^G:$^Mgg^G^H^G^Gg^[^[^[^[^[^[:1G^M{;
+"-   y
+":   reg
+"%   cutcopypaste.txt
+"/   \<Create\>
+
+```
+
+
 
 
 
