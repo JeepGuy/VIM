@@ -3,6 +3,7 @@
  :h  The short version of the :help command is :h
  :q <ENTER>  to exit help
 
+ :set mouse=a" to enable the mouse (in xterm or GUI).
 
 Syntax:  ["x]d{motion}
 ------         [] Brackets -signify optional information 
