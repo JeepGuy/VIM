@@ -72,7 +72,8 @@ To look at multiple registers type:
 
 #### PUT the most recent YANKED text you must proceed the put command with the number of the register
 
-oP  - (zero P) will put the text from register 0 (TODO) into the line iwth the cursor.
+"oP  - (double-quote - zero -  P) 
+        will put the text from register 0 (TODO) into the line with the cursor.
 
 
 ### The Black Hole Register   = /dev/null
