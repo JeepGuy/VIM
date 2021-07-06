@@ -19,6 +19,17 @@ Basic Navigation Commands: in command (command line) mode.
     <Ctrl> f   aka Page-down  To move forward one page in the file.  Hold down the control key and press "f".
     <Ctrl> b   aka Page-up    To move backward in the file. Hold down the control key and press "b".
 
+    ^f  - gets the help file definition for <Cntrl> f
+
+    CTRL-F                  Scroll window [count] pages Forwards (downwards) in
+                        the buffer.  See also 'startofline' option.
+                        When there is only one window the 'window' option
+                        might be used.  
+
+    CTRL-B                  Scroll window [count] pages Backwards (upwards) in the
+                        buffer.  See also 'startofline' option.
+                        When there is only one window the 'window' option
+                        might be used.
 
 Expanded Definitions for above.
 -------------------------------
@@ -50,6 +61,8 @@ b  (lowercase)    Move backward by word. To use "b". To use white space as word 
 
 gg (lowercae)     Move to the begining of the file, or "1gg"  (numeral one and gg = 1gg)
 
+:<line #> moves to a specific line number.
+
 G  (uppercase)    Move to the last line of the file, type "$G" or just "G"
 
 <LINE_NUMBER>gg or <LINE_NUMBER>G     To go to a specific line number.  
@@ -71,6 +84,6 @@ To list the line number and column on a file you set the ruler:
 
 You can use some regular expressions
 
-^ = beginning of line or selection
+^ = beginning of line or selection  - Shift 6 (caret)
 $ = end of line or selection
 
