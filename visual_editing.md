@@ -56,16 +56,20 @@ U - Make uppercase
    - then type:    " :center" and press enter 
 
 # Blockwise Visual Mode
+ - sometimes called vertical Visual mode...
+
+## Add a comment to a group of lines.
+
+- Move the cursor to the first word in the line to start visual block editing...
+- enter visual block mode   Control - v   ( from command mode)
+- navigate downward to the lines to add comment to... HJKL
+- Insert the # symbol by typing capital I followed by space then escape (wait for a moment)
 
 
-
-
-
-
-
-
- 
-
+# This is a comment.
+# So is this.
+# Why, this is also a comment.
+# Please, comment us out!
 
 
 
