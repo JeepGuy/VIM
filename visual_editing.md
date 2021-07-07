@@ -52,7 +52,7 @@ U - Make uppercase
 
 ### To re-select the lines above type   gv 
 
-   - To center the lines above, highlight them using gv
+   - To center the lines above, re-highlight (select) them using gv
    - then type:    " :center" and press enter 
 
 # Blockwise Visual Mode
@@ -60,16 +60,87 @@ U - Make uppercase
 
 ## Add a comment to a group of lines.
 
-- Move the cursor to the first word in the line to start visual block editing...
-- enter visual block mode   Control - v   ( from command mode)
-- navigate downward to the lines to add comment to... HJKL
-- Insert the # symbol by typing capital I followed by space then escape (wait for a moment)
-
+  - Move the cursor to the first word in the line to start visual block editing...
+  - enter visual block mode   Control - v   ( from command mode)
+  - navigate downward to the lines to add comment to... HJKL
+  - Insert the # symbol by typing capital I followed by space then escape (wait for a moment)
+       Insert "# " by typing I followed by #<SPACE><ESCAPE> .
 
 # This is a comment.
 # So is this.
 # Why, this is also a comment.
 # Please, comment us out!
+
+(NOTE: a double quote represents a comment in a vimrc file.)
+
+You can quickly reselect an area by typing gv . 
+   - To change the selected instances of # to ",
+         type c"<ESCAPE> .
+
+### Change the following comma separated value list, (replace chars vertically):
+
+Rank,Item
+"001","Q-Tips"
+"002","Paper Towels"
+"003","Toilet Paper"
+"004","Liquid Detergent"
+"005","Mouthwash"
+"006","Cereal"
+"007","Bottled Water"
+
+   - Place your cursor at the beginning of this line:
+   - Start blockwise visual mode by typing
+   - Move over 2 columns by typing l twice.
+   - Move down to the following line: "007","Bottled Water". 
+         (You can do that by pressing j six times.)
+   - Delete the highlighted text with the delete command by typing d or x . 
+         Notice that the text was deleted and you are back in normal mode.
+
+*** Results:
+
+Rank,Item
+1,"Q-Tips"
+2,"Paper Towels"
+3,"Toilet Paper"
+4,"Liquid Detergent"
+5,"Mouthwash"
+6,"Cereal"
+7,"Bottled Water"
+
+
+### Select to the end of uneven lines
+
+
+>
+>>>
+>>>>>
+>>>>>>>
+>>>>>>>>>>
+>>>>>>>
+>>>>>
+>>>>
+>
+
+   - Position your cursor on the very first line in the very first column. ( 27gg , for example.)
+   - Start blockwise visual mode with Ctrl-V . 
+   - Type j 8 times to select the entire first column of this block of text. 
+   - Type $ to select the text to the end of each line (just like RegEx)
+
+#### To append text to the end of the lines:.
+   -  Type A to start appending text 
+   -  Type <SPACE>#<SPACE>EOL<ESCAPE> .
+   -  Each line will have " # EOL" appended to it.   
+
+> # EOL
+>>> # EOL
+>>>>> # EOL
+>>>>>>> # EOL
+>>>>>>>>>> # EOL
+>>>>>>> # EOL
+>>>>> # EOL
+>>>> # EOL
+> # EOL
+
 
 
 
