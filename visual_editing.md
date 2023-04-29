@@ -57,7 +57,7 @@ U - Make uppercase
 
 # Blockwise Visual Mode
  - sometimes called vertical Visual mode...
-
+```
 ## Add a comment to a group of lines.
 
   - Move the cursor to the first word in the line to start visual block editing...
@@ -70,7 +70,7 @@ U - Make uppercase
 # So is this.
 # Why, this is also a comment.
 # Please, comment us out!
-
+```
 (NOTE: a double quote represents a comment in a vimrc file.)
 
 You can quickly reselect an area by typing gv . 
