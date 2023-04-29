@@ -110,7 +110,7 @@ Rank,Item
 
 ### Select to the end of uneven lines
 
-
+```
 >
 >>>
 >>>>>
@@ -120,6 +120,7 @@ Rank,Item
 >>>>>
 >>>>
 >
+```
 
    - Position your cursor on the very first line in the very first column. ( 27gg , for example.)
    - Start blockwise visual mode with Ctrl-V . 
@@ -130,7 +131,7 @@ Rank,Item
    -  Type A to start appending text 
    -  Type <SPACE>#<SPACE>EOL<ESCAPE> .
    -  Each line will have " # EOL" appended to it.   
-
+```
 > # EOL
 >>> # EOL
 >>>>> # EOL
@@ -140,7 +141,9 @@ Rank,Item
 >>>>> # EOL
 >>>> # EOL
 > # EOL
+```
 
+.
 
 
 
